@@ -1,5 +1,6 @@
 html, body {
   margin: 0;
+  font-family: 'Open Sans', sans-serif;
 }
 
 body {
@@ -7,7 +8,7 @@ body {
   background-size: cover;
   background-color: hsl(257, 40%, 49%);
   display: grid;
-  grid-template: 19% 1fr 40px / 60px 1fr 1fr 60px;
+  grid-template: 100px 1fr 30px / 60px 1fr 1fr 80px;
   grid-template-areas: ". header   .      ."
                        ". figure   main   ."
                        ". .        icons  .";
@@ -28,6 +29,59 @@ body {
 .info{
   grid-area: main;
   margin-left: 30px;
+  margin-top: 30px;
+  color: white;
+}
+
+h1, button{
+  font-family: 'Poppins', sans-serif;
+}
+
+.btn__container{
+  position: relative;
+  height: 50px;
+  display: inline-block;
+  margin-left: 15px;
+}
+
+.btn{
+  background: white;
+  text-align: center;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  padding: .5em;
+  height: 50px;
+  width: 150px;
+  color: hsl(257, 40%, 75%);
+  font-weight: bold;
+  transition: scale .2s;
+  font-size: 17px;
+}
+
+.btn::after{
+  content: "";
+  background-color: white;
+  position: absolute;
+  top: 0;
+  right: -15px;
+  border-radius: 50%;
+  height: 50px;
+  width: 30px;
+}
+.btn::before{
+  content: "";
+  background-color: white;
+  position: absolute;
+  top: 0;
+  left: -15px;
+  border-radius: 50%;
+  height: 50px;
+  width: 30px;
+}
+
+.btn:active{
+  transform: scale(.9);
 }
 
 .icons{
