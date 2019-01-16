@@ -1,0 +1,36 @@
+html, body {
+  margin: 0;
+}
+
+body {
+  background: url(./assets/bg-desktop.svg);
+  background-size: cover;
+  background-color: hsl(257, 40%, 49%);
+  display: grid;
+  grid-template: 19% 1fr 40px / 60px 1fr 1fr 60px;
+  grid-template-areas: ". header   .      ."
+                       ". figure   main   ."
+                       ". .        icons  .";
+}
+
+.header{
+  grid-area: header;
+  display: flex;
+  align-items: center;
+}
+
+.img{
+  grid-area: figure;
+  margin: 0;
+  margin-right: 30px;
+}
+
+.info{
+  grid-area: main;
+  margin-left: 30px;
+}
+
+.icons{
+  grid-area: icons;
+  justify-self: end;
+}
