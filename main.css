@@ -6,9 +6,10 @@ html, body {
 body {
   background: url(./assets/bg-desktop.svg);
   background-size: cover;
+  background-repeat: no-repeat;
   background-color: hsl(257, 40%, 49%);
   display: grid;
-  grid-template: 100px 1fr 40px / 60px 1fr 1fr 80px;
+  grid-template: 120px 1fr 40px / 60px 1fr 1fr 80px;
   grid-template-areas: ". header   .      ."
                        ". figure   main   ."
                        ". .        icons  .";
@@ -24,6 +25,10 @@ body {
   grid-area: figure;
   margin: 0;
   margin-right: 30px;
+}
+
+.img > img {
+  width: 50vw;
 }
 
 .info{
