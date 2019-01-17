@@ -4,7 +4,7 @@ html, body {
 }
 
 body {
-  background: url(./assets/bg-desktop.svg);
+  background: url(https://jsifontz.github.io/huddle-landing-page/assets/bg-desktop.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-color: hsl(257, 40%, 49%);
@@ -115,7 +115,7 @@ h1, button{
 
 @media screen and (max-width: 768px) {
   body {
-  background: url(./assets/bg-mobile.svg);
+  background: url(https://jsifontz.github.io/huddle-landing-page/assets/bg-mobile.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-color: hsl(257, 40%, 49%);
