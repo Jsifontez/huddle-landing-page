@@ -96,7 +96,6 @@ h1, button{
 
 .icons__container a{
   box-sizing: border-box;
-  padding: 3px;
 }
 
 .icons__container a:nth-child(2){
@@ -110,4 +109,75 @@ h1, button{
   padding: 6px;
   border: 2px solid white;
   border-radius: 50%;
+}
+
+/*mobile media queries*/
+
+@media screen and (max-width: 768px) {
+  body {
+  background-color: hsl(257, 40%, 49%);
+  display: grid;
+  grid-template: 110px 200px 1fr 80px / 50px 1fr 50px;
+  grid-template-areas: ". header ."
+                       ". figure ."
+                       ". main   ."
+                       ". icons  .";
+  }
+  
+  .header img{
+    width: 180px;
+    margin-left: -5px;
+  }
+
+  .img{
+    /*margin: 0 50px;*/
+  }
+
+  .img > img {
+    width: 100%;
+  }
+
+  .info{
+    margin: 0;
+    text-align: center;
+    font-size: 15px;
+  }
+
+  .info h1{
+    font-size: 1.4em;
+  }
+  
+  .btn__container{
+    height: 30px;
+  }
+
+  .btn{
+    height: 30px;
+    width: 150px;
+    font-size: 14px;
+  }
+
+  .btn:after{
+    height: 30px;
+  }
+
+  .btn:before{
+    height: 30px;
+  }
+
+  .icons__container{
+    justify-self: center;
+    align-self: center;
+  }
+
+  .icons__container a:nth-child(2){
+    margin: 0 8px;
+  }
+
+  .icons__container a > img {
+    width: 2em;
+    height: 2em;
+    padding: 4px;
+    border: 2px solid white;
+  }
 }
