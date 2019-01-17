@@ -8,7 +8,7 @@ body {
   background-size: cover;
   background-color: hsl(257, 40%, 49%);
   display: grid;
-  grid-template: 100px 1fr 30px / 60px 1fr 1fr 80px;
+  grid-template: 100px 1fr 40px / 60px 1fr 1fr 80px;
   grid-template-areas: ". header   .      ."
                        ". figure   main   ."
                        ". .        icons  .";
@@ -84,7 +84,25 @@ h1, button{
   transform: scale(.9);
 }
 
-.icons{
+.icons__container {
   grid-area: icons;
   justify-self: end;
+}
+
+.icons__container a{
+  box-sizing: border-box;
+  padding: 3px;
+}
+
+.icons__container a:nth-child(2){
+  margin: 0 40px;
+}
+
+.icons__container a > img {
+  width: 2.5em;
+  height: 2.5em;
+  box-sizing: border-box;
+  padding: 6px;
+  border: 2px solid white;
+  border-radius: 50%;
 }
