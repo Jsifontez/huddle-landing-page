@@ -124,12 +124,11 @@ h1, button{
 a{
   text-decoration: none;
   color: gold;
-  outline-color: hsl(210, 85%, 75%);
+  outline-color: gold;
 }
 
 a:visited{
   color: hsl(210, 85%, 75%);
-  outline-color: gold;
 }
 
 /*mobile media queries*/
