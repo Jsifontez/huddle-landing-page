@@ -129,6 +129,7 @@ a{
 
 a:visited{
   color: hsl(210, 85%, 75%);
+  outline-color: gold;
 }
 
 /*mobile media queries*/
